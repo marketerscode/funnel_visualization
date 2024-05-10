@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload CSV and Define Funnel Stages</title>
+</head>
+<body>
+    <h1>Upload CSV File and Specify Funnel Stages</h1>
+    <form action="/" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" required><br><br>
+        <label for="time_period">Select Time Period:</label>
+        <select name="time_period">
+            <option value="all">All</option>
+            <option value="Q1">Q1</option>
+            <option value="Q2">Q2</option>
+            <option value="Q3">Q3</option>
+            <option value="Q4">Q4</option>
+        </select><br><br>
+        <label for="stages">Enter Funnel Stages (comma-separated):</label>
+        <input type="text" name="stages" placeholder="Awareness,Interest,Consideration,Intent,Conversion" required><br><br>
+        <button type="submit">Upload and Visualize</button>
+    </form>
+</body>
+</html>
